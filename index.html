@@ -1,35 +1,103 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="index.css"/>
-    </head>
-    <body class="body">
-        <div class="container">
-            <div style="padding-inline:10%;padding-top: 10%;padding-bottom: 3%;">
-            <div class="container_header">
-                <img src="assets/me.png" class="personalimage"/>
-                <div class="container_header_details">
-                    <h1 class="hello">Hello!</h1>
-                    <h1 class="title">My name is Sushant Belsare.</h1>
-                    <h2 class="subtitle">I'm currently pursuing<br>Master's degree in Computer Science at<br>Syracuse University, New York</h2>
-                </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushant Belsare - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1>Sushant Belsare</h1>
+            <h2>Full Stack Developer</h2>
+            <p>Dayton, OH</p>
+            <div class="social-links">
+                <a href="mailto:sushantbelsare@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+13157664689"><i class="fas fa-phone"></i></a>
+                <a href="https://linkedin.com/in/sushbelsare" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/sushantbelsare" target="_blank"><i class="fab fa-github"></i></a>
             </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Full Stack Developer Intern</h3>
+                <p>Sikka.ai, San Jose, CA | June 2023 - Sept 2023</p>
+                <ul>
+                    <li>Orchestrated migration of high-traffic REST APIs to GraphQL (Apollo Server) with TypeScript, implementing DataLoader for efficient batching, reducing network payload by 60% and enhancing query resolution speed</li>
+                    <li>Leveraged Apache Kafka, Elasticsearch, and Logstash (ELK Stack) to stream logs in event-driven architecture, enhancing system reliability for feature rollouts and implementing real-time monitoring with Kibana dashboards</li>
+                    <li>Implemented Apollo Client with React hooks for GraphQL integration, setting up code splitting, lazy loading techniques for optimal bundle size, facilitating canary deployments using AWS and Docker containerization</li>
+                </ul>
             </div>
-            <div style="padding:5%">
-                <div class="details_container">
-                    <!-- <div class="section">
-                        <h3 class="section_title">About Me</h3>
-                        <span class="section_divider"></span>
-                    </div> -->
-                <div class="details">
-                    <h1 class="title">About Me</h1>
-                    <span class="section_description">I have previously worked as a software development engineer for two firms. I'm good at technical and interpersonal skills. I've worked on various projects including finance, healthcare, point-of-sale, and IoT. I always strive to solve complex problems with innovative solutions. I'm hoping to develop a strong technical foundation and scientific approach through the courses taken at SU.</span>
-                </div>
-                <div class="mediacontainer">
-                    <img class="aboutimage"src="assets/id-card.png"/>
-                </div>
-                </div>
+            <div class="job">
+                <h3>Senior Software Engineer</h3>
+                <p>Easypay Technologies, Remote, UAE | Feb 2022 - July 2022</p>
+                <ul>
+                    <li>Designed & tested low-latency RESTful APIs using Spring WebFlux for reactive programming, JUnit for unit testing, and Mockito for mocking, improving reliability through comprehensive test coverage and integration tests</li>
+                    <li>Maximized PostgreSQL database performance using Hibernate ORM with custom SQL queries and database indexing strategies, resulting in a 40% reduction in data retrieval times and improved application responsiveness</li>
+                    <li>Implemented robust security measures using Spring Security, OAuth 2.0, AWS Cognito, and JSON Web Tokens (JWT) in API Gateway, integrating AWS SNS for OTP-based multi-factor authentication</li>
+                </ul>
             </div>
-        </div>
-    </body>
+            <div class="job">
+                <h3>Software Engineer II</h3>
+                <p>Thinkitive Technologies IN | Sept 2019 - Dec 2021</p>
+                <ul>
+                    <li>Engineered scalable notification microservice using Java 8, Spring Boot, and Apache Kafka, implementing Circuit Breaker with Resilience4j to handle high-volume traffic, achieving 99% peak notification delivery rate</li>
+                    <li>Optimized Kafka topic utilization by implementing advanced batching strategies with Spring Batch and Quartz Scheduler, reducing message processing latency by 35% and improving overall system throughput</li>
+                    <li>Designed and implemented flexible notification interface using MongoDB for data persistence and Redis for high-speed caching, enabling non-technical users to create, manage templates, increasing operational efficiency by 25%</li>
+                    <li>Built reusable React components using Bootstrap, Material-UI, and Sass, streamlining UI development and optimizing API performance with Redux-Saga middleware and Axios for HTTP requests</li>
+                    <li>Utilized Next.js for server-side rendering (SSR) and dynamic routing, implementing code splitting and lazy loading techniques, leading to 40% improvement in First Contentful Paint (FCP) and Time to Interactive (TTI) metrics</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="edu">
+                <h3>Master of Science (MS), Computer Science</h3>
+                <p>Syracuse University, Syracuse, NY | 2022 - 2024</p>
+                <p>GPA: 3.8</p>
+                <p>Coursework: Algorithms, Operating Systems, Data Science, Machine Learning, Data Mining, Cryptography</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> Java (J2EE), JavaScript, TypeScript, Python, Go, C/C++, HTML, CSS, Kotlin</li>
+                <li><strong>Databases:</strong> PostgreSQL, MongoDB, MySQL, Redis, DynamoDB</li>
+                <li><strong>Frameworks:</strong> Spring Framework, Spring Boot, React.js, Next.js, Node.js, Apache Kafka, TensorFlow, PyTorch</li>
+                <li><strong>Cloud & DevOps:</strong> AWS (EC2, SQS, Lambda, CloudWatch), Azure (basics), GCP (basics), New Relic, Dynatrace</li>
+                <li><strong>Tools & Methodologies:</strong> Git, Jira, Confluence, Linux, Agile (Scrum, Kanban), Test-Driven Development (TDD)</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me for any opportunities or collaborations!</p>
+            <a href="mailto:sushantbelsare@gmail.com" class="btn">Email Me</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sushant Belsare. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
